@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     web.hostsupdater.aliases = ["development.local"]
     web.vm.synced_folder "../digital_profiles", "/home/ubuntu/digital_profiles"
 end
-# hello
+# hello okkk
 config.vm.define "db" do |db|
     db.vm.box = "ubuntu/trusty64"
     db.vm.hostname = 'db'
