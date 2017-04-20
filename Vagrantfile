@@ -32,7 +32,7 @@ config.vm.define "db" do |db|
     db.vm.box = "ubuntu/trusty64"
     db.vm.hostname = 'db'
     db.vm.network "private_network" , ip: "192.10.10.150"
-    db.hostsupdater.aliases = ["database.local"]
+    # db.hostsupdater.aliases = ["database.local"]
     # ENV["MONGODB_URI"]="mongodb://192.168.10.101"
     db.vm.provision"chef_solo" do |dbchef|
       dbchef.cookbooks_path= ['cookbooks']

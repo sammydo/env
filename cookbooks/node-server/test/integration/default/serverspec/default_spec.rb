@@ -21,9 +21,13 @@ describe port(80) do
   it { should be_listening }
 end
 
-describe command('git --version') do
-  its(:stdout) { should match /2\.7\.4/ }
+describe package('git') do
+  it { should be_installed }
 end
+
+# describe command('git --version') do
+#   its(:stdout) { should match /2\.7\.4/ }
+# end
 
 describe package('pm2') do
   it { should be_installed.by('npm') }
