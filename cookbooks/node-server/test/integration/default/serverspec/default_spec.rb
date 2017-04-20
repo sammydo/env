@@ -22,7 +22,7 @@ describe port(80) do
 end
 
 describe command('git --version') do
-  its(:stdout) { should match /1\.9\.1/ }
+  its(:stdout) { should match /2\.7\.4/ }
 end
 
 describe package('pm2') do
