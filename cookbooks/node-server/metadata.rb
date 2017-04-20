@@ -27,3 +27,5 @@ depends 'git', '~> 6.0.0'
 depends 'mongodb3', '~> 5.3.0'
 
 depends 'magic_shell'
+
+depends 'magic_shell_environment'
