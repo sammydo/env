@@ -28,4 +28,6 @@ depends 'mongodb3', '~> 5.3.0'
 
 depends 'magic_shell'
 
-depends 'magic_shell_environment'
+magic_shell_environment 'MONGODB_URI' do
+  value 'mongodb://192.168.10.101'
+end
