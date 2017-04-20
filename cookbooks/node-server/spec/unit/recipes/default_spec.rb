@@ -22,6 +22,11 @@ describe 'node-server::default' do
     it "should install nginx" do
       expect(chef_run).to install_package 'nginx'
     end
+    # it "should install magic_shell" do
+    #   expect(chef_run).to install_package 'magic_shell_environment'
+    # end
+
+
     it "enables the nginx service" do
       expect(chef_run).to enable_service 'nginx'
     end
@@ -48,6 +53,9 @@ describe 'node-server::default' do
     end
     it "should include gulp" do
       expect(chef_run).to install_nodejs_npm 'gulp'
+    end
+    it "should include MONGODB_URI" do
+      expect(chef_run).to add_magic_shell_environment 'MONGODB_URI'
     end
 
     it "should include bower" do
