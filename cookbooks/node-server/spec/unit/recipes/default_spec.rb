@@ -54,9 +54,9 @@ describe 'node-server::default' do
     it "should include gulp" do
       expect(chef_run).to install_nodejs_npm 'gulp'
     end
-    it "should include MONGODB_URI" do
-      expect(chef_run).to add_magic_shell_environment 'MONGODB_URI'
-    end
+    # it "should include MONGODB_URI" do
+    #   expect(chef_run).to add_magic_shell_environment 'MONGODB_URI'
+    # end
 
     it "should include bower" do
       expect(chef_run).to install_nodejs_npm 'bower'

@@ -26,11 +26,10 @@ nodejs_npm 'pm2'
 nodejs_npm 'gulp'
 nodejs_npm 'bower'
 
-include_recipe 'mongodb3::default'
-magic_shell_environment 'MONGODB_URI' do
-  value 'mongodb://192.168.10.101'
-end
-
+# magic_shell_environment 'MONGODB_URI' do
+#   value 'mongodb://192.168.10.101'
+# end
+# test
 
 # include_recipe 'sc-mongodb::default'
 # include_recipe 'mongodb3::default'
