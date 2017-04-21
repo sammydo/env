@@ -4,3 +4,4 @@ default['nodejs']['binary']['checksum'] = '99c4136cf61761fac5ac57f80544140a3793b
 
 # MongoDB version to install
 # default['mongodb3']['version'] = '3.2.1'
+default_unless['pm2']['pm2_version'] = 'latest'
