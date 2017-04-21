@@ -19,11 +19,10 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 #
 # source_url 'https://github.com/<insert_org_here>/node-server'
 depends 'nodejs', '~> 3.0.0'
-
 depends 'git', '~> 6.0.0'
 
 # depends 'sc-mongodb', '~> 0.18.1'
 
 depends 'mongodb3', '~> 5.3.0'
 
-depends 'magic_shell'
+# depends 'magic_shell'

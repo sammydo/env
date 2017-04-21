@@ -26,19 +26,21 @@ Vagrant.configure("2") do |config|
       webchef.cookbooks_path= ['cookbooks']
       webchef.run_list =['recipe[node-server::default]']
     end
-end
-# hello okkk
-config.vm.define "db" do |db|
-    db.vm.box = "ubuntu/trusty64"
-    db.vm.hostname = 'db'
-    db.vm.network "private_network" , ip: "192.10.10.150"
-    # db.hostsupdater.aliases = ["database.local"]
-    # ENV["MONGODB_URI"]="mongodb://192.168.10.101"
-    db.vm.provision"chef_solo" do |dbchef|
-      dbchef.cookbooks_path= ['cookbooks']
-      dbchef.run_list =['recipe[node-server::mongo]']
-    end
-end
+  end
+
+  # hello okkk
+  config.vm.define "db" do |db|
+      db.vm.box = "ubuntu/trusty64"
+      db.vm.hostname = 'db'
+      db.vm.network "private_network" , ip: "192.10.10.150"
+      # db.hostsupdater.aliases = ["database.local"]
+      # ENV["MONGODB_URI"]="mongodb://192.168.10.101"
+      db.vm.provision"chef_solo" do |dbchef|
+        dbchef.cookbooks_path= ['cookbooks']
+        dbchef.run_list =['recipe[node-server::mongo]']
+      end
+  end
+
 #   config.vm.provision "chef_solo" do |chef|
 #   chef.cookbooks_path = ['cookbooks']
 #   chef.run_list =['recipe[node-server::default]']
