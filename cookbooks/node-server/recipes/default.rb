@@ -23,8 +23,13 @@ end
 include_recipe 'nodejs'
 include_recipe 'git'
 # nodejs_npm 'pm2'
-
 include_recipe 'pm2::default'
+
+execute "Install PM2" do
+    command "npm install pm2 -g"
+    not_if { File.exists?("pm2") }
+end
+
 # magic_shell_environment 'MONGODB_URI' do
 #   value 'mongodb://192.168.10.101'
 # end

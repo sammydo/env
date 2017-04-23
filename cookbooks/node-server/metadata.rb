@@ -22,7 +22,6 @@ depends 'nodejs', '~> 3.0.0'
 depends 'git', '~> 6.0.0'
 
 # depends 'sc-mongodb', '~> 0.18.1'
-
 depends 'mongodb3', '~> 5.3.0'
 depends 'pm2'
 # depends 'magic_shell'
