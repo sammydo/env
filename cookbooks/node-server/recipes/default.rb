@@ -8,7 +8,7 @@ include_recipe 'apt'
 package 'nginx' do
   action :install
 end
-
+#hi
 service 'nginx' do
   supports status: true, restart: true, reload: true
   action [:enable, :start]
