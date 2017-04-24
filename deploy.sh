@@ -9,5 +9,6 @@ sudo chef-client --local-mode --runlist 'recipe[node-server]'
 cd ~/digital_profiles
 git pull
 sudo npm install
+export MONGODB_URI=mongodb://34.248.151.171
 pm2 kill
 pm2 start index.js
