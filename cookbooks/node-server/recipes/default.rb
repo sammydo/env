@@ -30,9 +30,9 @@ nodejs_npm 'pm2'
 #     not_if { File.exists?("pm2") }
 # end
 
-# magic_shell_environment 'MONGODB_URI' do
-#   value 'mongodb://192.168.10.101'
-# end
+magic_shell_environment 'MONGODB_URI' do
+  value 'mongodb://192.168.10.101'
+end
 # test
 
 # include_recipe 'sc-mongodb::default'
