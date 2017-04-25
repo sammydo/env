@@ -1,7 +1,7 @@
 {
  "apps": [{
      "name": "digital_profiles",
-     "script": "./digital_profiles/index.js",
+     "script": "./index.js",
      "watch"     : true,
      "cwd": "./digital_profiles",
      "env": {
