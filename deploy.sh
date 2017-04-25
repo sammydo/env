@@ -10,7 +10,8 @@ cd ~/digital_profiles
 git pull
 sudo npm install
 sudo npm install -g bower
-mv bower_components/ public/bower_components
 pm2 kill
 pm2 start index.js
 #
+#
+# asadsdsD
