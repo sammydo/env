@@ -1,11 +1,12 @@
 {
  "apps": [{
      "name": "digital_profiles",
-     "script": "./index.js",
+     "script": "../digital_profiles/index.js",
      "watch"     : true,
      "cwd": "../digital_profiles",
      "env": {
-       "MONGODB_URI": "mongodb://34.248.151.171"
+       "MONGODB_URI": "mongodb://34.248.151.171",
+       "PORT": "3000"
      }
 }]
 
