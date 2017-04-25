@@ -3,7 +3,7 @@
      "name": "digital_profiles",
      "script": "./index.js",
      "watch"     : true,
-     "cwd": "./digital_profiles",
+     "cwd": "../digital_profiles",
      "env": {
        "MONGODB_URI": "mongodb://34.248.151.171",
        "PORT": "3000",
