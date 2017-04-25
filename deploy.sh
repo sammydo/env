@@ -13,3 +13,4 @@ sudo npm install -g bower
 mv bower_components/ public/bower_components
 pm2 kill
 pm2 start index.js
+#
