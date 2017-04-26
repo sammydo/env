@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     web.vm.box = "ubuntu/trusty64"
     web.vm.network "private_network" , ip: "192.168.10.100"
     web.hostsupdater.aliases = ["development.local"]
-    web.vm.synced_folder "../digital_profiles", "/home/ubuntu/digital_profiles"
+    web.vm.synced_folder "../app", "/home/ubuntu/app"
 
     web.vm.provision"chef_solo" do |webchef|
       webchef.cookbooks_path= ['cookbooks']
