@@ -44,6 +44,7 @@ vagrant ssh
 ```
 cd /home/ubuntu/app
 npm install
+bower install
 node index.js
 
 ```
