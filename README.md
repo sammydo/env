@@ -76,9 +76,9 @@ Explain how to run the automated tests for this system
 
 ### Chef Spec tests - Unit Tests
 ```
-cd env
-
-cd env/cookbooks/node-server
+cd env/cookbooks
+berks vendor cookbooks
+cd node-server
 chef exec rspec
 
 ```
