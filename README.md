@@ -7,7 +7,35 @@ Environment used for running the Digital Profiles application.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+### Checkout Project 
+
+```
+mkdir digital_profiles
+cd digital_profiles
+git clone git@github.com:sammydo/env.git env
+git clone git@github.com:sammydo/digital_profiles.git app
+
+```
+
+### Run Project
+
+```
+cd env
+vagrant up
+vagrant ssh 
+
+```
+
+### Inside vagrant machine
+
+```
+cd app
+node app.js
+
+```
+visit localhost:3000 to view app
 
 ### Prerequisites
 
