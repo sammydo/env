@@ -5,6 +5,17 @@ Environment used for running the Digital Profiles application.
 * Node sverver Ubuntu trusty 64 
 * Vagrant (Mongo) database is included 
 
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+git 
+virtual box
+vagrant 
+
+```
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -31,19 +42,15 @@ vagrant ssh
 ### Inside vagrant machine
 
 ```
-cd app
-node app.js
+cd /home/ubuntu/app
+npm install
+bower install
+node index.js
 
 ```
-visit localhost:3000 to view app
+visit development.local/ to view app
 
-### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
@@ -67,6 +74,21 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
+### Chef Spec tests - Unit Tests
+```
+cd env/cookbooks
+berks vendor cookbooks
+cd node-server
+chef exec rspec
+
+```
+
+### Serverspec tests - Intergration Tests
+```
+cd env/cookbooks/node-server
+chef exec rspec
+
+```
 ### Break down into end to end tests
 
 Explain what these tests test and why
