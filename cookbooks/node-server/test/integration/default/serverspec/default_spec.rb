@@ -32,3 +32,7 @@ end
 describe package('pm2') do
   it { should be_installed.by('npm') }
 end
+
+describe package('bower') do
+  it { should be_installed.by('npm') }
+end

@@ -23,6 +23,7 @@ end
 include_recipe 'nodejs'
 include_recipe 'git'
 nodejs_npm 'pm2'
+nodejs_npm 'bower'
 
 magic_shell_environment 'MONGODB_URI' do
   value 'mongodb://192.168.10.101'
